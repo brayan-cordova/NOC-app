@@ -1,0 +1,20 @@
+{
+    "name": "noc-app",
+    "version": "1.0.0",
+    "description": "Network Operation Center",
+    "main": "index.js",
+    "scripts": {
+        "dev": "tsnd --respawn src/index.ts",
+        "build": "rimraf ./dist && tsc",
+        "start": "npm run build && node dist/index.js"
+    },
+    "keywords": [],
+    "author": "Brayan Cordova",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^20.9.0",
+        "rimraf": "^5.0.5",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.2.2"
+    }
+}
