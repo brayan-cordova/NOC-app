@@ -1,8 +1,8 @@
 # NOC-app
 
-Network Operation Center
+Network Operation Center - NodeJS version 18.18.2
 
-1. Dependencies to install
+1. Dev dependencies to install
 
 ```
 npm i -D typescript @types/node ts-node-dev rimraf
