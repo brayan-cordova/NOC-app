@@ -5,7 +5,7 @@ Network Operation Center - NodeJS version 18.18.2
 1. Dependencies to install
 
 ```
-npm i cron
+npm i cron dotenv env-var
 ```
 
 2. Dev dependencies to install
