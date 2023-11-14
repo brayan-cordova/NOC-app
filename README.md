@@ -16,6 +16,8 @@ npm i -D typescript @types/node ts-node-dev rimraf
 
 # Dev, this is for you!!
 
+# Configure environment variables
+
 3. Create a .env file with the following configuration:
 
 ```
@@ -26,8 +28,6 @@ PROD= false
 ```
 
 or just copy the structure that appears in .env.template
-
-3.1 Configure environment variables
 
 4. Initialize typescript configuration file
 
