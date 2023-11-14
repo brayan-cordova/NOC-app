@@ -14,7 +14,7 @@ npm i cron dotenv env-var
 npm i -D typescript @types/node ts-node-dev rimraf
 ```
 
-# Dev, this is for you!!
+# Hey Dev, this is for you!! 😎
 
 Configure environment variables
 
