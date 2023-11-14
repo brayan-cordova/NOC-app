@@ -17,12 +17,15 @@ npm i -D typescript @types/node ts-node-dev rimraf
 # Dev, this is for you!!
 
 3. Create a .env file with the following configuration:
-   `PORT = 3000
+
+```
+PORT = 3000
 MAILER_EMAIL =
 MAILER_SECRET_KEY =
 PROD= false
-   `
-   or just copy the structure that appears in .env.template
+```
+
+or just copy the structure that appears in .env.template
 
 3.1 Configure environment variables
 
