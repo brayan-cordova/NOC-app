@@ -16,7 +16,7 @@ npm i -D typescript @types/node ts-node-dev rimraf
 
 # Dev, this is for you!!
 
-# Configure environment variables
+Configure environment variables
 
 3. Create a .env file with the following configuration:
 
@@ -43,7 +43,7 @@ npx tsc --init --outDir dist/ --rootDir src
 "start": "npm run build && node dist/index.js"
 ```
 
-or run:
+or run on your terminal:
 
 ```
 npm run dev
