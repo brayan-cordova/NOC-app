@@ -17,11 +17,14 @@ export class Server {
         console.log('Server started...');
 
         CronService.createJob('*/5 * * * * *', () => {
-            const url = 'https://localhost:3000';
+            const url = 'https://www.google.com ';
             new CheckService(
                 fileSystemLogRepository,
                 () => console.log(`${url} is OK`),
                 (error) => console.log(error)
+
+                // undefined,
+                // undefined,
             ).execute(url);
             // new CheckService().execute('http://localhost:3000');
         });

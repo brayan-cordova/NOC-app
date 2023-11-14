@@ -43,6 +43,7 @@ export class FileSystemDatasource implements LogDatasource {
             fs.appendFileSync(this.highLogsPath, logAsJson);
         }
     }
+
     async getLogs(severityLevel: LogSeverityLevel): Promise<LogEntity[]> {
         switch (severityLevel) {
             case LogSeverityLevel.low:
