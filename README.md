@@ -1,4 +1,4 @@
-# NOC-app
+# NOC-App
 
 Network Operation Center - NodeJS version 18.18.2 and Typescript
 
@@ -14,31 +14,33 @@ npm i cron dotenv env-var
 npm i -D typescript @types/node ts-node-dev rimraf
 ```
 
-# dev
+# Dev, this is for you!!
 
-    1. Create a .env file with the following configuration:
-    ```
-        PORT = 3000
-        MAILER_EMAIL =
-        MAILER_SECRET_KEY =
-        PROD= false
-    ```
-    or just copy the structure that appears in .env.template
-    2. Configure environment variables
+3. Create a .env file with the following configuration:
+   `PORT = 3000
+MAILER_EMAIL =
+MAILER_SECRET_KEY =
+PROD= false
+   `
+   or just copy the structure that appears in .env.template
 
-3. Initialize typescript configuration file
+3.1 Configure environment variables
+
+4. Initialize typescript configuration file
 
 ```
 npx tsc --init --outDir dist/ --rootDir src
 ```
 
-4. Scripts to run
+5. Scripts to run
 
 ```
 "dev": "tsnd --respawn src/index.ts",
 "build": "rimraf ./dist && tsc",
 "start": "npm run build && node dist/index.js"
 ```
+
+or run:
 
 ```
 npm run dev
