@@ -14,6 +14,12 @@ npm i cron dotenv env-var
 npm i -D typescript @types/node ts-node-dev rimraf
 ```
 
+or simple type on your terminal:
+
+```
+npm install
+```
+
 # Hey Dev, this is for you!! 😎
 
 Configure environment variables

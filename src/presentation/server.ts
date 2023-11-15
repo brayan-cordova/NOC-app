@@ -16,17 +16,19 @@ export class Server {
     public static start() {
         console.log('Server started...');
 
-        CronService.createJob('*/5 * * * * *', () => {
-            const url = 'https://www.google.com ';
-            new CheckService(
-                fileSystemLogRepository,
-                () => console.log(`${url} is OK`),
-                (error) => console.log(error)
+        // send emails
 
-                // undefined,
-                // undefined,
-            ).execute(url);
-            // new CheckService().execute('http://localhost:3000');
-        });
+        // CronService.createJob('*/5 * * * * *', () => {
+        //     const url = 'https://www.google.com ';
+        //     new CheckService(
+        //         fileSystemLogRepository,
+        //         () => console.log(`${url} is OK`),
+        //         (error) => console.log(error)
+
+        //         // undefined,
+        //         // undefined,
+        //     ).execute(url);
+        //     // new CheckService().execute('http://localhost:3000');
+        // });
     }
 }
