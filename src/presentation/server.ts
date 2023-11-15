@@ -1,6 +1,8 @@
 import { LogRepositoryImpl } from '../infrastructure/repositories/log.repository.impl';
 import { FileSystemDatasource } from '../infrastructure/datasources/file-system.datasource';
 import { EmailService } from './email/email.service';
+import { CronService } from './cron/cron-service';
+import { CheckService } from '../domain/use-cases/checks/check-service';
 
 // implementation instances
 const fileSystemLogRepository = new LogRepositoryImpl(
@@ -17,10 +19,15 @@ export class Server {
     public static start() {
         console.log('Server started...');
 
-        // send emails
-        const emailService = new EmailService();
+        // todo: send emails
+
+        // const emailService = new EmailService();
+        // emailService.sendEmailWithFileSystemLogs([
+        //     'leomarket502@gmail.com',
+        //     'maryangel.dubon@gmail.com',
+        // ]);
         // emailService.sendEmail({
-        //     to: 'leo.cordova.22@gmail.com',
+        //     to: 'leomarket502@gmail.com',
         //     subject: 'System Logs',
         //     htmlBody: `
         //     <h3>System Logs - Network Operation Center (NOC)</h3>
