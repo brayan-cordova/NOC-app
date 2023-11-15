@@ -1,3 +1,5 @@
+// configuration and definition of environment variables
+
 import 'dotenv/config';
 import * as env from 'env-var';
 

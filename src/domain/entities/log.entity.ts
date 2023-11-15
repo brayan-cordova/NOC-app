@@ -12,10 +12,10 @@ export interface LogEntityOptions {
 }
 
 export class LogEntity {
-    public level: LogSeverityLevel; // Enum
+    public level: LogSeverityLevel; // enum
     public message: string;
-    public createdAt: Date;
     public origin: string;
+    public createdAt: Date;
 
     constructor(options: LogEntityOptions) {
         const { message, level, origin, createdAt = new Date() } = options;

@@ -5,7 +5,7 @@ Network Operation Center - NodeJS version 18.18.2 and Typescript
 1. Dependencies to install
 
 ```
-npm i cron dotenv env-var
+npm i cron dotenv env-var nodemailer
 ```
 
 2. Dev dependencies to install

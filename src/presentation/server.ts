@@ -1,10 +1,10 @@
-import { CheckService } from '../domain/use-cases/checks/check-service';
-import { CronService } from './cron/cron-service';
 import { LogRepositoryImpl } from '../infrastructure/repositories/log.repository.impl';
 import { FileSystemDatasource } from '../infrastructure/datasources/file-system.datasource';
 
 // implementation instances
 const fileSystemLogRepository = new LogRepositoryImpl(
+    // here are the connections to the databases
+
     // new postgreSQLLogDatasource(),
     // new mongoLogDatasource(),
     // new oracleLogDatasource(),
