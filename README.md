@@ -14,6 +14,10 @@ npm i cron dotenv env-var nodemailer
 npm i -D typescript @types/node ts-node-dev rimraf
 ```
 
+```
+npm i --save-dev @types/nodemailer
+```
+
 or simple type on your terminal:
 
 ```
@@ -28,6 +32,7 @@ Configure environment variables
 
 ```
 PORT = 3000
+MAILER_SERVICE=
 MAILER_EMAIL =
 MAILER_SECRET_KEY =
 PROD= false
