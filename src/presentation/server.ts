@@ -20,12 +20,12 @@ export class Server {
         console.log('Server started...');
 
         // todo: send emails
-
-        // const emailService = new EmailService();
+        // const emailService = new EmailService(fileSystemLogRepository);
         // emailService.sendEmailWithFileSystemLogs([
         //     'leomarket502@gmail.com',
-        //     'maryangel.dubon@gmail.com',
+        //     'bosnanlabcompany@gmail.com',
         // ]);
+
         // emailService.sendEmail({
         //     to: 'leomarket502@gmail.com',
         //     subject: 'System Logs',
