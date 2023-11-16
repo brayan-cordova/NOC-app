@@ -3,6 +3,7 @@ import { FileSystemDatasource } from '../infrastructure/datasources/file-system.
 import { EmailService } from './email/email.service';
 import { CronService } from './cron/cron-service';
 import { CheckService } from '../domain/use-cases/checks/check-service';
+import { SendEmailLogs } from '../domain/use-cases/email/send-email-logs';
 
 // implementation instances
 const fileSystemLogRepository = new LogRepositoryImpl(
@@ -14,16 +15,22 @@ const fileSystemLogRepository = new LogRepositoryImpl(
 
     new FileSystemDatasource()
 );
+const emailService = new EmailService();
 
 export class Server {
     public static start() {
         console.log('Server started...');
 
         // todo: send emails
-        // const emailService = new EmailService(fileSystemLogRepository);
+
+        // new SendEmailLogs(emailService, fileSystemLogRepository).execute([
+        //     'leomarket502@gmail.com',
+        //     'bosnanlabcompany@gmail.com ',
+        // ]);
+
         // emailService.sendEmailWithFileSystemLogs([
         //     'leomarket502@gmail.com',
-        //     'bosnanlabcompany@gmail.com',
+        //     'bosnanlabcompany@gmail.com ',
         // ]);
 
         // emailService.sendEmail({

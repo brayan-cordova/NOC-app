@@ -29,7 +29,7 @@ export class EmailService {
         tls: { rejectUnauthorized: false },
     });
 
-    constructor(private readonly LogRepository: LogRepository) {}
+    constructor() {}
 
     // send email
     async sendEmail(options: SendMailOptions): Promise<boolean> {
@@ -48,7 +48,6 @@ export class EmailService {
                 message: 'Email sent',
                 origin: 'email.service.ts',
             });
-            this.LogRepository.saveLog(log);
 
             return true;
         } catch (error) {
@@ -57,7 +56,7 @@ export class EmailService {
                 message: 'Email not sent',
                 origin: 'email.service.ts',
             });
-            this.LogRepository.saveLog(log);
+
             return false;
         }
     }
